@@ -12,6 +12,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Objects;
+
 public class LoginPage extends AppCompatActivity {
 
     private SharedPreferences sP;
@@ -62,7 +64,7 @@ public class LoginPage extends AppCompatActivity {
 
     public void onLoginClick(View view) {
 
-        if(getLoginEmail() == emailCheck && getLoginPassword() == passCheck){
+        if(Objects.equals(getLoginEmail(), emailCheck) && Objects.equals(getLoginPassword(), passCheck)){
             Intent intent = new Intent(LoginPage.this, MainActivity.class);
             LoginPage.this.startActivity(intent);
         } else{
