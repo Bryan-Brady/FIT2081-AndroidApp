@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Add Movie"
+        android:id="@+id/drawer_layout_add_item_id"/>
+    <item android:title="Remove Last Movie"
+        android:id="@+id/drawer_layout_remove_last_item_id"/>
+    <item android:title="Clear Movies"
+        android:id="@+id/drawer_layout_remove_all_movies_id"/>
+    <item android:title="Double Costs"
+        android:id="@+id/drawer_layout_double_costs_id"/>
+    <item android:title="List All Movies"
+        android:id="@+id/drawer_layout_list_all_movies_id"/>
+    <item android:title="Select * from database"
+        android:id="@+id/select_all_from_database_id"/>
+
+</menu>
